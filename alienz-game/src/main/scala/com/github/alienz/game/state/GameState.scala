@@ -9,8 +9,7 @@ import com.github.gigurra.math.Vec2
 case class GameState(cutscene: Option[Cutscene],
                      var worldTime: Long,
                      var appTime: Long,
-                     var ownPos: Vec2[Long],
-                     var worldScale: Long)
+                     var ownPos: Vec2[Long])
 
 object GameState {
   def apply(t0: Long = System.currentTimeMillis): GameState = {
@@ -18,8 +17,7 @@ object GameState {
       cutscene = None,
       worldTime = t0,
       appTime = t0,
-      ownPos = Vec2(0L, 0L),
-      worldScale = 1000L
+      ownPos = Vec2(0L, 0L)
     )
   }
 }
