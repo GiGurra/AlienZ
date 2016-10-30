@@ -1,6 +1,7 @@
 package com.github.alienz.game
 
 import com.badlogic.gdx.backends.lwjgl.{LwjglApplication, LwjglApplicationConfiguration}
+import com.github.gigurra.glasciia.GameLauncher._
 
 /**
   * Created by johan on 2016-10-26.

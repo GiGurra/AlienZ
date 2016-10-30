@@ -10,15 +10,11 @@ import com.github.gigurra.glasciia.{Game, GameEvent}
   */
 class Alienz extends Game {
 
+  val state = GameState()
+
   def eventHandler: PartialFunction[GameEvent, Unit] = {
 
-    case Init(canvas) =>
-      val game = canvas.game
-      game.addResource[GameState]("game-state", GameState())
-
-    case Render(canvas) =>
-      val game = canvas.game
-      val state = game.resource[GameState]("game-state")
+    case Render =>
       update(state)
       drawWorld(state, canvas)
       drawGui(state, canvas)
