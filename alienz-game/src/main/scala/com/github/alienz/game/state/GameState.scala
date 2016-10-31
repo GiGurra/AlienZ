@@ -1,12 +1,12 @@
 package com.github.alienz.game.state
 
-import com.github.alienz.game.cutscene.Cutscene
+import com.github.gigurra.glasciia.Act
 import com.github.gigurra.math.Vec2
 
 /**
   * Created by johan on 2016-10-26.
   */
-case class GameState(cutscene: Option[Cutscene],
+case class GameState(var cutscene: Option[Act],
                      var worldTime: Long,
                      var appTime: Long,
                      var ownPos: Vec2[Long])

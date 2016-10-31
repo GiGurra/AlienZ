@@ -14,7 +14,7 @@ class Alienz extends Game {
 
   def eventHandler: PartialFunction[GameEvent, Unit] = {
 
-    case Render =>
+    case Render(time, _) =>
       update(state)
       drawWorld(state, canvas)
       drawGui(state, canvas)
