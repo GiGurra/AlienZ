@@ -25,6 +25,6 @@ object DesktopLauncher {
       backgroundFPS = 30
     }
 
-    new LwjglApplication(Alienz, config)
+    new LwjglApplication(AlienZ, config)
   }
 }

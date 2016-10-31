@@ -9,15 +9,17 @@ import com.github.gigurra.math.Vec2
 case class GameState(var cutscene: Option[Act],
                      var worldTime: Long,
                      var appTime: Long,
-                     var ownPos: Vec2[Long])
+                     val player: Player,
+                     val storyProgression: StoryProgression)
 
 object GameState {
-  def apply(t0: Long = System.currentTimeMillis): GameState = {
+  def newGame(player: Player = Player.newGame()): GameState = {
     new GameState(
       cutscene = None,
-      worldTime = t0,
-      appTime = t0,
-      ownPos = Vec2(0L, 0L)
+      worldTime = 0L,
+      appTime = 0L,
+      player = player,
+      storyProgression = StoryProgression.newGame()
     )
   }
 }

@@ -7,6 +7,7 @@ lazy val commonSettings = Seq(
     "com.github.gigurra" %% "glasciia-desktop"           % "0.2.18-SNAPSHOT",
     "com.github.gigurra" %% "service-utils"              % "0.1.14-SNAPSHOT",
     "com.github.gigurra" %% "scalego-serialization-json" % "0.3.7",
+    "com.beachape"       %% "enumeratum"                 % "1.4.17",
     "org.scalatest"      %% "scalatest"                  % "2.2.4"            % "test",
     "org.mockito"        %  "mockito-core"               % "1.10.19"          % "test"
   ),

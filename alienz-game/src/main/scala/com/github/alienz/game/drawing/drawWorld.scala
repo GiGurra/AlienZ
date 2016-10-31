@@ -21,7 +21,7 @@ object drawWorld {
 
     canvas.drawFrame(
       clearBuffer = Some(Color.DARK_GRAY),
-      camPos = state.ownPos.toFloat,
+      camPos = state.player.pos.toFloat,
       camViewportWithoutZoom = camWorldWidth * Vec2(1.0f, 1.0f / canvas.aspectRatio)
     ) {
       canvas.drawText(
