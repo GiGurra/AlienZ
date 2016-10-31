@@ -8,7 +8,7 @@ import com.github.gigurra.glasciia.{Game, GameEvent}
 /**
   * Created by johan on 2016-10-26.
   */
-class Alienz extends Game {
+object Alienz extends Game {
 
   val state = GameState()
 
